@@ -1,0 +1,12 @@
+[package]
+name = "remoteserver"
+version = "0.1.0"
+authors = ["seiuneko <seiunekosl@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+webbrowser = { version = "1.0.3", features = ["hardened", "disable-wsl"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
